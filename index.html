@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.png"  class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Porfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span> Sujit </span> <br> Ghogare From India</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- ------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about__col-1">
+                     <img src="assets/sujit.jpg" alt="">
+                </div>
+                <div class="about__col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illo eos accusamus nemo totam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, molestiae accusantium! Odit quasi nemo voluptas!</p>
+
+                    <div class="tab__titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Eduction</p>
+                    </div>
+                    <div class="tab__contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desining  usre interafce of responsive web pages</li>
+                            <li><span>Frontend Developer</span><br>Desining responsive web pages</li>
+                            <li><span> Java Developer</span><br>Developing complicated projects of backend </li>
+                        </ul>
+                    </div>
+                    <div class="tab__contents" id="experince">
+                        <ul>
+                            <li><span>Experince</span><br>Desining  usre interafce of responsive web pages</li>
+                            <li><span>Frontend Developer</span><br>Desining responsive web pages</li>
+                            <li><span> Java Developer</span><br>Developing complicated projects of backend </li>
+                        </ul>
+                    </div>
+                    <div class="tab__contents" id="education">
+                        <ul>
+                            <li><span> Education</span><br>Desining  usre interafce of responsive web pages</li>
+                            <li><span>Frontend Developer</span><br>Desining responsive web pages</li>
+                            <li><span> Java Developer</span><br>Developing complicated projects of backend </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName('tab-links')
+        var tabcontents=document.getElementsByClassName('tab__contents')
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
