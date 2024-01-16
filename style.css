@@ -331,7 +331,7 @@ form input, form textarea{
        background: #152023; 
     }
     .header__text{
-        margin-top: 80%;
+        margin-top: 100%;
         font-size: 16px;
     }
     .header__text h1{
@@ -378,6 +378,7 @@ form input, form textarea{
     }
    
     .about__col-1 img{
+        margin-top: 2rem;
         margin-bottom: 2rem;
         width: 80%;
         /* height: 200px; */
