@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="assets/logo.png"  class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Porfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="assets/2.png"  class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+                 
             </nav>
             <div class="header__text">
                 <p>Frontend Developer</p>
-                <h1>Hi, I'm <span> Sujit </span> <br> Ghogare From India</h1>
+                <h1>Hi, I'm <span> Sujit </span>Ghogare From India</h1>
+                <P>Specalizing in pixel-perfect web design</P>
             </div>
         </div>
 
@@ -35,36 +41,128 @@
                 </div>
                 <div class="about__col-2">
                     <h2 class="sub-title">About Me</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo illo eos accusamus nemo totam error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, molestiae accusantium! Odit quasi nemo voluptas!</p>
+                    <p>I am an accomplished, passionate frontend developer with passion for creating seamless user experinces.</p>
+                    <br>
+                    <p>Bringing my expertise in responsive design and UI/UX principles, I bring concepts to life ensuring each project is a masterpiece of pricision and funcationality</p>
 
                     <div class="tab__titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                        <!-- <p class="tab-links" onclick="opentab('experince')">Experience</p> -->
                         <p class="tab-links" onclick="opentab('education')">Eduction</p>
                     </div>
                     <div class="tab__contents active-tab" id="skills">
                         <ul>
                             <li><span>UI/UX</span><br>Desining  usre interafce of responsive web pages</li>
-                            <li><span>Frontend Developer</span><br>Desining responsive web pages</li>
-                            <li><span> Java Developer</span><br>Developing complicated projects of backend </li>
+                            <li><span>Frontend Development</span><br>Desining responsive web pages ,With strong foundation of HTML, CSS, JAVASCRIPT </li>
+                            <li><span> JAVA</span></li>
                         </ul>
                     </div>
-                    <div class="tab__contents" id="experince">
+                    <!-- <div class="tab__contents" id="experince">
                         <ul>
                             <li><span>Experince</span><br>Desining  usre interafce of responsive web pages</li>
                             <li><span>Frontend Developer</span><br>Desining responsive web pages</li>
                             <li><span> Java Developer</span><br>Developing complicated projects of backend </li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="tab__contents" id="education">
                         <ul>
                             <li><span> Education</span><br>Desining  usre interafce of responsive web pages</li>
                             <li><span>Frontend Developer</span><br>Desining responsive web pages</li>
-                            <li><span> Java Developer</span><br>Developing complicated projects of backend </li>
+                            <li><span>JAVA</span></li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+<!-- --------------------------services------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore tenetur.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore tenetur.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-building"></i>
+                    <h2>Company</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore tenetur.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Tech Club</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Agro Agency</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- ---------------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>spghogare456@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7755999537</p>
+                    <div class="social-icons">
+                       <a href="https://www.linkedin.com/in/sujit-ghogre-783b5721a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a> 
+                       <a href="https://github.com/itssg001"><i class="fa-brands fa-github"></i></a> 
+                       <a href="https://www.linkedin.com/in/sujit-ghogre-783b5721a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-twitter"></i></a> 
+                       <a href="https://www.instagram.com/its_sg_001"><i class="fa-brands fa-instagram"></i></a> 
+                    </div>
+                    <a href="assets/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type=" text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Name" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Made by Sujit.Ghogare </p>
         </div>
     </div>
     <script>
@@ -80,6 +178,16 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        };
     </script>
 </body>
 </html>
