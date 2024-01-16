@@ -376,9 +376,7 @@ form input, form textarea{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .about__col-1{
-        
-    }
+   
     .about__col-1 img{
         margin-bottom: 2rem;
         width: 80%;
