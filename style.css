@@ -337,7 +337,7 @@ form input, form textarea{
         padding-bottom: 20px;
     }
     .header__text h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     nav .fa-solid{
         display:block;
@@ -361,7 +361,7 @@ form input, form textarea{
         margin: 25px;
     }
 
-    ul li .fa-solid{
+     nav ul  .fa-solid{
         position: absolute;
         top: 25px;
         left: 25px;
@@ -379,8 +379,16 @@ form input, form textarea{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-   
-    .about__col-1 img{
+    .about__col-1,.about__col-2{
+        flex-basis: 100%;
+    }
+     .about__col-1{
+        margin-bottom: 30px;
+     }
+     .about__col-2{
+        font-size: 14px;
+     }
+    /* .about__col-1 img{
         margin-top: 2rem;
         margin-bottom: 2rem;
         width: 80%;
@@ -391,5 +399,14 @@ form input, form textarea{
         font-weight:600 ;
         color: white;
         margin-bottom: 2rem;
+    } */
+    /* --------CONTACT------ */
+    .contact-left, .contact-right{
+        flex-basis: 100%;
     }
+ }
+ #msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: blockd;
  }
