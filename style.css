@@ -334,9 +334,10 @@ form input, form textarea{
  @media only screen and (max-width:600px){
     #header{
        background: #152023; 
+       height: 75vh;
     }
     .header__text{
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 20px;
         padding-bottom: 20px;
     }
