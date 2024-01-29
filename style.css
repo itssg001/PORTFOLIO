@@ -58,6 +58,8 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+
 .header__text{
     margin-top: 28%;
     font-size: 30px;
@@ -335,10 +337,13 @@ form input, form textarea{
  @media only screen and (max-width:600px){
     #header{
        background: #152023; 
+       display: block;
+       justify-content: center;
+       align-items: center;
       
     }
     .header__text{
-        margin-top: 100px;
+        margin-top: 150px;
         font-size: 20px;
         padding-bottom: 20px;
     }
@@ -389,7 +394,7 @@ form input, form textarea{
         flex-basis: 100%;
     }
      .about__col-1{
-        margin-top: 5vw;
+       
         margin-bottom: 30px;
      }
      .about__col-2{
